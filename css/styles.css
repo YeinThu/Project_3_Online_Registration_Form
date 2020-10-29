@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: 'El Messiri', sans-serif;
+  color: gray;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+input, select, textarea {
+  transition: 0.5s ease-in-out;
+}
+
+/* Utilities */
+.wrapper {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.line {
+  border-top: 2px solid steelblue;
+}
+
+fieldset {
+  border: none;
+}
+
+/* Header */
+header {
+  padding: 2rem;
+  background-color: steelblue;
+  color: #fff;
+}
+
+/* Header Secondary */
+#header-secondary {
+  border-bottom: 4px solid steelblue;
+  margin-bottom: 3px;
+  padding: 1.8rem 0 2rem;
+}
+
+#header-secondary .sign-up {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: steelblue;
+  margin-bottom: 0.5rem;
+}
+
+#header-secondary .lead {
+  color: gray;
+  line-height: 1;
+}
+
+/* Form */
+/* General Styles */
+legend {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: steelblue;
+  margin-bottom: 1rem;
+}
+
+/* Contact Info */
+.contact-info {
+  padding: 1.4rem 0;
+  background: linear-gradient(to right, white 25%, linen 80%, white 94%);
+}
+
+.contact-info label,
+.contact-info input,
+.contact-info select {
+  display: block;
+}
+
+.contact-info label {
+  margin-bottom: 0.15rem;
+}
+
+.contact-info input,
+.contact-info select {
+  margin-bottom: 0.75rem;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  outline: none;
+  background-color: #e8e8e8;
+  border-radius: 5px;
+}
+
+.contact-info select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.contact-info input[name="zip"] {
+  width: 50%;
+}
+
+.contact-info input:focus {
+  border: 1px solid steelblue;
+}
+
+.contact-info input[required] {
+  text-align: right;
+}
+
+.contact-info input[required]:focus {
+  text-align: left;
+}
+
+/* Newsletter */
+.newsletter {
+  padding: 1.4rem 0;
+  background: linear-gradient(to right, white 25%, linen 80%, white 94%);
+}
+
+.newsletter .group-title {
+  margin-bottom: 0.5rem;
+}
+
+.newsletter .checkboxes,
+.newsletter .radio {
+  margin-bottom: 1rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+textarea[id="topics"] {
+  width: 100%;
+  background-color: #e8e8e8;
+  resize: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem;
+}
+
+button[type="submit"] {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.4rem;
+  border: none;
+  background-color: lightseagreen;
+  color: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  padding: 1.5rem 0;
+}
+
+/* Additional Focus States For All Text Fields */
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: gainsboro;
+}
+
+/* Media Queries */
+/* Tablets & Desktop */
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+  }
+
+  #header-secondary {
+    padding: 3.6rem 0 3rem;
+  }
+
+  .contact-info {
+    padding: 2.4rem 0;
+  }
+
+  .contact-info .form-group {
+    display: flex;
+  }
+
+  .contact-info label {
+    width: 200px;
+  }
+
+  .contact-info input[id="zip"] {
+    width: 300px;  
+  }
+
+  .sign-up, legend {
+    font-size: 1.4rem;
+  }
+}

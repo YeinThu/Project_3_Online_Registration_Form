@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Project III | Registration Form</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="text-center">
+    <h1 class="title">THE CODE REVIEW</h1>
+  </header>
+
+  <!-- Header Secondary -->
+  <div class="wrapper">
+    <section id="header-secondary" class="text-center">
+      <div class="container">
+        <a href="#" class="sign-up">Sign up for our newsletter</a>
+        <p class="lead">Get the latest on how your code is doing right in your inbox.</p>
+      </div>
+    </section>
+    <div class="line"></div>
+
+    <!-- Main -->
+    <main>
+        <!-- Main Form -->
+        <form action="#">
+          <!-- Contact Information -->
+          <section class="contact-info">
+            <fieldset>
+              <legend>Contact Information</legend>
+              <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Required" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Required" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="number" id="phone" name="phone" placeholder="Phone">
+              </div>
+              <div class="form-group">
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="address" placeholder="Address">
+              </div>
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="City">
+              </div>
+              <div class="form-group">
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="choose_state" selected>Choose State</option>
+                    <option value="arizona">AZ</option>
+                    <option value="california">CA</option>
+                    <option value="nevada">NV</option>
+                    <option value="new_york">NY</option>
+                    <option value="washington">WA</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="zip">Zip Code</label>
+                <input type="number" id="zip" name="zip" placeholder="Zip Code">
+              </div>
+            </fieldset>
+          </section>
+          <div class="line"></div>
+          <!-- Newsletter -->
+          <section class="newsletter">
+            <fieldset>
+              <legend>Newsletter</legend>
+              <!-- Checkboxes -->
+              <div class="checkboxes">
+                <p class="group-title">Select the newsletters you would like to receive</p>
+                <div class="form-group">
+                  <input type="checkbox" name="newsletter" id="html_news" value="html_news">
+                  <label for="html_news">HTML News</label>
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" name="newsletter" id="css_news" value="css_news">
+                  <label for="css_news">CSS News</label>
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" name="newsletter" id="js_news" value="js_news">
+                  <label for="js_news">Javascript News</label>
+                </div>
+              </div>
+              <!-- Radio Buttons -->
+              <div class="radio">
+                <p class="group-title">Newsletter Format</p>
+                <div class="form-group">
+                  <input type="radio" name="format" id="html" value="html">
+                  <label for="html">HTML</label>
+                </div>
+                <div class="form-group">
+                  <input type="radio" name="format" id="plain_text" value="plain_text">
+                  <label for="plain_text">Plain Text</label>
+                </div>
+              </div>
+              <!-- Text Area -->
+              <p class="group-title">Other topics you'd like to hear about</p>
+              <textarea name="topics" id="topics" rows="10"></textarea>
+            </fieldset>
+          </section>
+          <button type="submit">Sign Up</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <p><em>Copyright The Code Review</em></p>
+    </footer>
+  </div>
+
+  
+  
+</body>
+</html>
