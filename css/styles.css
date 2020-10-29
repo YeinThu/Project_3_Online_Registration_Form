@@ -103,9 +103,10 @@ legend {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  color: gray;
 }
 
-.contact-info input[name="zip"] {
+.contact-info input[name="zipcode"] {
   width: 50%;
 }
 
@@ -198,8 +199,9 @@ textarea:focus {
     width: 200px;
   }
 
-  .contact-info input[id="zip"] {
+  .contact-info input[id="zipcode"] {
     width: 300px;  
+    margin-left: -2.7rem;
   }
 
   .sign-up, legend {
