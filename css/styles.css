@@ -97,6 +97,7 @@ legend {
   outline: none;
   background-color: #e8e8e8;
   border-radius: 5px;
+  border: 1px solid transparent; /* Added style from first submision review. Worked out great, stopped the inputs from moving slightly when being focused on */
 }
 
 .contact-info select {
